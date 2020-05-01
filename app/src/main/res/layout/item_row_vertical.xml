@@ -8,8 +8,10 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
         app:cardCornerRadius="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,32 +26,39 @@
             <ImageView
                 android:id="@+id/img_gambar"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="200dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/gambar" />
 
+
             <TextView
+                android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:text="Kontrakan dekat Toko Kranji"
+                android:textColor="#242323"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#242323"/>
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tv_lokasi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kranji, Bekasi Barat"/>
+                android:layout_marginStart="10dp"
+                android:text="Kranji, Bekasi Barat" />
 
             <TextView
+                android:id="@+id/tv_harga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:text="Rp.700.000 / Bulan"
+                android:textColor="@color/colorPrimary"
                 android:textSize="17sp"
-                android:textStyle="bold"
-
-                android:layout_marginTop="20dp"
-                android:textColor="@color/colorPrimary"/>
+                android:textStyle="bold" />
 
 
         </LinearLayout>
