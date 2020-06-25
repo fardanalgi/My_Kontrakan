@@ -23,17 +23,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailKontrakan"></activity>
+        <activity android:name=".AboutActivity"></activity>
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppThemee" />
+        <activity
+            android:name=".DetailKontrakan"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".signin.SignupActivity" />
         <activity android:name=".signin.SigninActivity" />
-        <activity android:name=".SplashscreenActivity">
+        <activity
+            android:name=".SplashscreenActivity"
+            android:theme="@style/AppThemee">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

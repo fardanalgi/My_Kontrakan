@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_signin.*
 import android.widget.Toast
+import com.frdcompany.mykontrakan.HomeActivity
 import com.frdcompany.mykontrakan.MainActivity
 import com.frdcompany.mykontrakan.R
 import com.frdcompany.mykontrakan.utils.Preferences
@@ -27,14 +28,14 @@ class SigninActivity : AppCompatActivity() {
         mDatabase = FirebaseDatabase.getInstance().getReference("User")
         preferences = Preferences(this)
 
-        preferences.setValues("onboarding", "1")
-        if (preferences.getValues("status").equals("1")) {
-            finishAffinity()
-
-            val intent = Intent(this@SigninActivity,
-                MainActivity::class.java)
-            startActivity(intent)
-        }
+//        preferences.setValues("onboarding", "1")
+//        if (preferences.getValues("status").equals("1")) {
+//            finishAffinity()
+//
+//            val intent = Intent(this@SigninActivity,
+//                MainActivity::class.java)
+//            startActivity(intent)
+//        }
 
         btn_login.setOnClickListener {
             iUsername = et_username.text.toString()
@@ -77,7 +78,7 @@ class SigninActivity : AppCompatActivity() {
                         finishAffinity()
 
                         val intent = Intent(this@SigninActivity,
-                            MainActivity::class.java)
+                            HomeActivity::class.java)
                         startActivity(intent)
 
                     } else {

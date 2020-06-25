@@ -95,7 +95,7 @@ class SignupActivity : AppCompatActivity() {
                     preferences.setValues("status", "1")
 
                     val intent = Intent(this@SignupActivity,
-                        MainActivity::class.java).putExtra("nama", data.nama)
+                        MainActivity::class.java)
                     startActivity(intent)
 
                 } else {
