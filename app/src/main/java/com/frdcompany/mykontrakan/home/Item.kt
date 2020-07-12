@@ -5,7 +5,7 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Item (
-    var lokasi: String? ="",
+    var lokasi: String ="",
     var title: String ="",
     var harga: String ="",
     var pemilik: String? ="",
@@ -16,5 +16,11 @@ data class Item (
     var parkir: String? ="",
     var luas: String? ="",
     var gambar: Int,
-    var maps: String? =""
+    var maps: String? ="",
+    var nama: String? ="",
+    var komentar: String? ="",
+    var namaa: String? ="",
+    var komentarr: String? ="",
+    var namaaa: String? ="",
+    var komentarrr: String? =""
 ): Parcelable

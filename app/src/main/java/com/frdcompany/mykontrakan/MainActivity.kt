@@ -58,7 +58,13 @@ class MainActivity : AppCompatActivity() {
                 "1",
                 "120",
                 R.drawable.hi,
-                "https://www.google.com/maps/place/Kota+Harapan+Indah+Marketing+Office/@-6.1820889,106.9708863,17z/data=!3m1!4b1!4m5!3m4!1s0x2e698bb97f42f7ff:0x78f0a07fb52f8524!8m2!3d-6.1820889!4d106.973075"
+                "https://www.google.com/maps/place/Kota+Harapan+Indah+Marketing+Office/@-6.1820889,106.9708863,17z/data=!3m1!4b1!4m5!3m4!1s0x2e698bb97f42f7ff:0x78f0a07fb52f8524!8m2!3d-6.1820889!4d106.973075",
+                "Ruri",
+                "Rumah bebas banjir, lingkungan aman",
+                "Sinta",
+                "Air PAM nya jernih dan deras",
+                "Rudi",
+                "Lingkungan sekitar asri"
             )
         )
         dataList.add(
@@ -74,7 +80,12 @@ class MainActivity : AppCompatActivity() {
                 "1",
                 "163",
                 R.drawable.lipo,
-                "https://www.google.com/maps/place/Meadow+Green,+Lippo+Cikarang/@-6.3330007,107.1394417,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x2e699a51287b6845:0x884bcb70a8ff8264!2sMeadow+Green,+Lippo+Cikarang!8m2!3d-6.3330007!4d107.1416304!3m4!1s0x2e699a51287b6845:0x884bcb70a8ff8264!8m2!3d-6.3330007!4d107.1416304"
+                "https://www.google.com/maps/place/Meadow+Green,+Lippo+Cikarang/@-6.3330007,107.1394417,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x2e699a51287b6845:0x884bcb70a8ff8264!2sMeadow+Green,+Lippo+Cikarang!8m2!3d-6.3330007!4d107.1416304!3m4!1s0x2e699a51287b6845:0x884bcb70a8ff8264!8m2!3d-6.3330007!4d107.1416304",
+                "Dimas",
+                "Rumah sering banjir",
+                "Aden",
+                "Suasana asri"
+
             )
         )
         dataList.add(
@@ -106,7 +117,9 @@ class MainActivity : AppCompatActivity() {
                 "1",
                 "53",
                 R.drawable.lippo_cikarang,
-                "https://www.google.com/maps/place/Segara+City+Cluster+GALEA/@-6.121031,106.9739406,13z/data=!4m8!1m2!2m1!1s+Segara+City+Cluster+Galea,+Bekasi+-+Jawa+Barat!3m4!1s0x2e6a21ce90912cfd:0xac2a7bb2a25e04b2!8m2!3d-6.121031!4d107.0015352"
+                "https://www.google.com/maps/place/Segara+City+Cluster+GALEA/@-6.121031,106.9739406,13z/data=!4m8!1m2!2m1!1s+Segara+City+Cluster+Galea,+Bekasi+-+Jawa+Barat!3m4!1s0x2e6a21ce90912cfd:0xac2a7bb2a25e04b2!8m2!3d-6.121031!4d107.0015352",
+                "Ajeng",
+                "Lingkungan masih sepi"
             )
         )
         dataList.add(

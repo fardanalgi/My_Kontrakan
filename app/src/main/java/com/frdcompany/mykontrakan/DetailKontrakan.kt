@@ -4,26 +4,23 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import com.bumptech.glide.Glide
 import com.frdcompany.mykontrakan.home.Item
 import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_detail_kontrakan.*
 
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-import androidx.core.app.ComponentActivity
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import androidx.appcompat.app.ActionBar
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.frdcompany.mykontrakan.fasilitas.Fasilitas
+import com.frdcompany.mykontrakan.fasilitas.FasilitasAdapter
 
 
 class DetailKontrakan : AppCompatActivity() {
 
     lateinit var mDatabase: DatabaseReference
     private val TAG = "MyActivity"
+
+    private var mList = ArrayList<Fasilitas>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +31,17 @@ class DetailKontrakan : AppCompatActivity() {
         actionBar!!.setDisplayShowHomeEnabled(true)
 
         val data = intent.getParcelableExtra<Item>("data")
+
+        rv_fasilitas.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
+        rv_fasilitas.adapter = FasilitasAdapter(mList){
+        }
+
+        mList.add(Fasilitas(R.drawable.kamar1))
+        mList.add(Fasilitas(R.drawable.kamar2))
+        mList.add(Fasilitas(R.drawable.kamar3))
+        mList.add(Fasilitas(R.drawable.toilet2))
+        mList.add(Fasilitas(R.drawable.toilet))
+        mList.add(Fasilitas(R.drawable.garasi))
 
 
 
@@ -47,6 +55,12 @@ class DetailKontrakan : AppCompatActivity() {
         tv_deskripsi.text = data.deskripsi
         tv_pemilik.text = data.pemilik
         tv_harga.text = data.harga
+        tv_nama.text = data.nama
+        tv_komentar.text = data.komentar
+        tv_nama2.text = data.namaa
+        tv_komentar2.text = data.komentarr
+        tv_nama3.text = data.namaaa
+        tv_komentar3.text = data.komentarrr
 
 
         Glide.with(this)
